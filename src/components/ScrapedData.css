@@ -1,0 +1,23 @@
+.scraped-data-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.scraped-item {
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin: 10px;
+    width: calc(30% - 20px); /* Ajuste la largeur de l'élément pour obtenir un effet aléatoire */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transform: rotate(calc(5deg - 10deg * random()));
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.scraped-item:hover {
+    transform: scale(1.05) rotate(calc(-5deg + 10deg * random()));
+}
