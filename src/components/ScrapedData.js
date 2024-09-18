@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './ScrapedData.css';
+import './css/ScrapedData.css';
 
 const ScrapedData = () => {
     const [data, setData] = useState({});
